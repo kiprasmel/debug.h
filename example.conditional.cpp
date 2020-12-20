@@ -1,5 +1,5 @@
 #if (false || defined(DEBUG)) && !defined(EVAL)
-	#include "debug.h"
+	#include "debug.h" // https://github.com/kiprasmel/debug.h
 #else
 	struct debug {
 		template <class c> debug& operator <<(const c&) { return * this; }

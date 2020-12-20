@@ -1,4 +1,4 @@
-#include "debug.h"
+#include "debug.h" // https://github.com/kiprasmel/debug.h
 
 int main() {
 	int a = 1337;

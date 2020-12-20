@@ -27,7 +27,7 @@ sudo mv debug.h /usr/local/include/
 see [./example.cpp](./example.cpp)
 
 ```c++
-#include "debug.h"
+#include "debug.h" // https://github.com/kiprasmel/debug.h
 
 int main() {
 	int a = 1337;
@@ -51,7 +51,7 @@ and otherwise provide the fallback:
 
 ```c++
 #if (false || defined(DEBUG)) && !defined(EVAL)
-    #include "debug.h"
+    #include "debug.h" // https://github.com/kiprasmel/debug.h
 #else
     struct debug {
         template <class c> debug& operator <<(const c&) { return * this; }
